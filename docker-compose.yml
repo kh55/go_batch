@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+  go_batch:
+    build:
+      context: .
+      dockerfile: ./go_batch/Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - ./go_batch:/app
